@@ -19,22 +19,14 @@ This workshop provides developers with hands on experience building cloud native
 
 IMPORTANT: Each new lab exercise builds upon the preceding lab, so please do not skip around the labs!
 
-* Session 1: link:presentations/Session_1_CN_Design_DDD.pptx[_Cloud Native Design, Domain Driven Design, & Microservices_]
-* Session 2: link:presentations/Session_2_Intro_Boot.pptx[_Introducing Spring Boot_]
+* Session 1: link:presentations/Session_2_Intro_Boot.pptx[_Introducing Spring Boot_]
 ** Lab 1: link:labs/lab01/lab01.adoc[Building A Spring Boot Application]
-* Session 3: link:presentations/Session_3_Polyglot_Persist.pptx[_Polyglot Persistence with Spring Data REST_]
+* Session 2: link:presentations/Session_3_Polyglot_Persist.pptx[_Polyglot Persistence with Spring Data REST_]
 ** Lab 2: link:labs/lab02/lab02.adoc[Build a Hypermedia-Driven RESTful Web Service with Spring Data REST]
-* Session 4: 
+* Session 3: 
 ** Lab 3: 
-* Session 5: 
-* Session 6: 
+* Session 4: 
 ** Lab 4:
-* Session 7: 
-** Lab 5: 
-* Session 8: 
-** Lab 6: 
-* Session 9: 
-** Lab 7: 
 
 == Lab Setup
 

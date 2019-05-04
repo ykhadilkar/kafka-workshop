@@ -23,8 +23,8 @@ IMPORTANT: Each new lab exercise builds upon the preceding lab, so please do not
 ** Lab 1: link:labs/lab01/lab01.adoc[Building A Spring Boot Application]
 * Session 2: link:presentations/Session_3_Polyglot_Persist.pptx[_Polyglot Persistence with Spring Data REST_]
 ** Lab 2: link:labs/lab02/lab02.adoc[Build a Hypermedia-Driven RESTful Web Service with Spring Data REST]
-* Session 3: 
-** Lab 3: 
+* Session 3: Spring-Kafka
+** Lab 3: link:labs/lab3/README.adoc[Simple Spring Boot Kafka producer/consumer]
 * Session 4: 
 ** Lab 4:
 

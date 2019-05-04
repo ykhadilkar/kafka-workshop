@@ -1,4 +1,3 @@
-Pivotal Spring + Kafka Workshop
 
 ifdef::env-github[]
 :tip-caption: :bulb:

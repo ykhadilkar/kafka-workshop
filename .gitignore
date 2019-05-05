@@ -23,5 +23,7 @@
 hs_err_pid*
 /labs/*/target
 .DS_Store
+.idea/libraries
+.idea/inspectionProfiles
 
 

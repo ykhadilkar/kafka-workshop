@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - KafkaStreamsWordCountApplication",
+            "request": "launch",
+            "mainClass": "kafka.streams.word.count.KafkaStreamsWordCountApplication",
+            "projectName": "kafka-streams-word-count"
+        }
+    ]
+}

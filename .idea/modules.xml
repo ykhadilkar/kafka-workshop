@@ -3,10 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/kafka-workshop.iml" filepath="$PROJECT_DIR$/kafka-workshop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labs/lab2/lab2.iml" filepath="$PROJECT_DIR$/labs/lab2/lab2.iml" />
       <module fileurl="file://$PROJECT_DIR$/labs/lab3/lab3.iml" filepath="$PROJECT_DIR$/labs/lab3/lab3.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab3/lab3.iml" filepath="$PROJECT_DIR$/lab3/lab3.iml" />
       <module fileurl="file://$PROJECT_DIR$/labs/lab4/lab3 (1).iml" filepath="$PROJECT_DIR$/labs/lab4/lab3 (1).iml" />
-      <module fileurl="file://$PROJECT_DIR$/labs/lab4/lab4.iml" filepath="$PROJECT_DIR$/labs/lab4/lab4.iml" />
     </modules>
   </component>
 </project>

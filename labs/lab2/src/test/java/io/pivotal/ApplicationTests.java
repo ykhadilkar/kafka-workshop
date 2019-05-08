@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example;
+package io.pivotal;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

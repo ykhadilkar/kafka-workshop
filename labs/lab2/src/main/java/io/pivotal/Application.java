@@ -1,4 +1,4 @@
-package com.example;
+package io.pivotal;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.slf4j.Logger;
@@ -16,8 +16,6 @@ import org.springframework.kafka.listener.DeadLetterPublishingRecoverer;
 import org.springframework.kafka.listener.SeekToCurrentErrorHandler;
 import org.springframework.kafka.support.converter.RecordMessageConverter;
 import org.springframework.kafka.support.converter.StringJsonMessageConverter;
-
-import com.common.Foo2;
 
 @SpringBootApplication
 public class Application {
@@ -45,10 +43,10 @@ public class Application {
 		return new StringJsonMessageConverter();
 	}
 
-	@KafkaListener(id = "fooGroup", topics = "topic1")
-	public void listen(Foo2 foo) {
-		logger.info("Received: " + foo);
-		if (foo.getFoo().startsWith("fail")) {
+	@KafkaListener(id = "userGroup", topics = "topic1")
+	public void listen(User2 user2) {
+		logger.info("Received: " + user2);
+		if (user2.getName().startsWith("fail")) {
 			throw new RuntimeException("failed");
 		}
 	}

@@ -14,7 +14,7 @@ public class Controller {
 
 	@PostMapping(path = "/send/user/{name}")
 	public void sendUser(@PathVariable String name) {
-		this.template.send("topic1", new User1(name));
+		this.template.send("users", new User1(name));
 
 	}
 

@@ -43,7 +43,7 @@ public class Application {
 		return new StringJsonMessageConverter();
 	}
 
-	@KafkaListener(id = "userGroup", topics = "topic1")
+	@KafkaListener(id = "userGroup", topics = "users")
 	public void listen(User2 user2) {
 		logger.info("Received: " + user2);
 		if (user2.getName().startsWith("fail")) {
@@ -51,19 +51,19 @@ public class Application {
 		}
 	}
 
-	@KafkaListener(id = "dltGroup", topics = "topic1.DLT")
+	@KafkaListener(id = "dltGroup", topics = "input.DLT")
 	public void dltListen(String in) {
 		logger.info("Received from DLT: " + in);
 	}
 
 	@Bean
 	public NewTopic topic() {
-		return new NewTopic("topic1", 1, (short) 1);
+		return new NewTopic("users", 1, (short) 1);
 	}
 
 	@Bean
 	public NewTopic dlt() {
-		return new NewTopic("topic1.DLT", 1, (short) 1);
+		return new NewTopic("users.DLT", 1, (short) 1);
 	}
 
 }

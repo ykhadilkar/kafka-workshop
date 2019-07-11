@@ -20,7 +20,7 @@ public class UserCountProcessorApplication {
 
     public static final String INPUT_TOPIC = "input";
     public static final String OUTPUT_TOPIC = "output";
-    public static final int WINDOW_SIZE_MS = 30000;
+    public static final int WINDOW_SIZE_MS = 60000;
 
     @StreamListener(INPUT_TOPIC)
     @SendTo(OUTPUT_TOPIC)

@@ -26,6 +26,15 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
+	/**
+	 * By default, records that fail are simply logged and we move on to the next one.
+	 * We can, however, configure an error handler in the listener container to perform some other action.
+	 * To do so, we override Spring Boot’s auto-configured container factory with our own:
+	 * @param configurer
+	 * @param kafkaConsumerFactory
+	 * @param template
+	 * @return
+	 */
 	@Bean
 	public ConcurrentKafkaListenerContainerFactory<?, ?> kafkaListenerContainerFactory(
 			ConcurrentKafkaListenerContainerFactoryConfigurer configurer,
@@ -51,7 +60,7 @@ public class Application {
 		}
 	}
 
-	@KafkaListener(id = "dltGroup", topics = "input.DLT")
+	@KafkaListener(id = "dltGroup", topics = "users.DLT")
 	public void dltListen(String in) {
 		logger.info("Received from DLT: " + in);
 	}

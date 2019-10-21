@@ -31,7 +31,7 @@ public class UserCountProcessorApplication {
                 .map((key, value) -> new KeyValue<>(value, value))
                 .groupByKey(Serialized.with(Serdes.String(), Serdes.String()))
                 .windowedBy(TimeWindows.of(WINDOW_SIZE_MS))
-                .count(Materialized.as("WordCounts-1"))
+                .count(Materialized.as("materialized-counts"))
                 .toStream()
                 .map((key, value) -> new KeyValue<>(null, new UserCount(key.key(), value, new Date(key.window().start()), new Date(key.window().end()))));
     }

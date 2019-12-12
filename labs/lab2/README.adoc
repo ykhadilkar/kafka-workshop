@@ -51,5 +51,5 @@ Observe Users topic
 `kafka-console-consumer --bootstrap-server 127.0.0.1:9092 describe --topic users`
 
 Observe Kafka Streams Counts output topic
-`kafka-console-consumer --bootstrap-server 127.0.0.1:9092 describe --topic counts`
+`kafka-console-consumer --bootstrap-server 127.0.0.1:9092 describe --topic users-count`
 
